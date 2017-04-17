@@ -126,10 +126,10 @@
 			<div>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">Home</a> <span class="divider">/</span>
+						<a href="#">员工</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">Forms</a>
+						<a href="#">添加</a>
 					</li>
 				</ul>
 			</div>
@@ -137,7 +137,7 @@
 			<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
-						<h2><i class="icon-edit"></i> Edit Message</h2>
+						<h2><i class="icon-edit"></i> 添加</h2>
 						<div class="box-icon">
 							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
 						</div>
@@ -145,67 +145,60 @@
 					<div class="box-content">
 						<form class="form-horizontal">
 						  <fieldset>
-							<legend>Admin,您正在修改信息...</legend>
+							<legend>Admin,您正在添加信息...</legend>
 							<div class="control-group">
-							  <label class="control-label" for="typeahead">name </label>
+							  <label class="control-label" for="typeahead">名称 </label>
 							  <div class="controls">
-								<input value="NAME1" type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								<input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
 							  </div>
 							</div>
 
 						    <div class="control-group">
-							  <label class="control-label" for="typeahead">password </label>
+							  <label class="control-label" for="typeahead">编号 </label>
 							  <div class="controls">
-								  <input value="********"  type="text" class="span6 typeahead" id="password"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
 							  </div>
 						    </div>
 
-						    <div class="control-group error">
-							  <label class="control-label" for="inputError">confir</label>
+						  <div class="control-group">
+							  <label class="control-label" for="typeahead">联系电话 </label>
 							  <div class="controls">
-								  <input value="********"   type="text" id="inputError">
+								  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
 							  </div>
-						    </div>
+						  </div>
 
 							  <div class="control-group">
-								  <label class="control-label">Plain Select</label>
+								  <label class="control-label">所属科室</label>
 								  <div class="controls">
 									  <select id="selectErrorss">
-										  <option>Option 1</option>
-										  <option>Option 2</option>
-										  <option>Option 3</option>
-										  <option>Option 4</option>
-										  <option>Option 5</option>
+										  <option>科室一</option>
+										  <option>科室二</option>
 									  </select>
 								  </div>
 							  </div>
 
 							  <div class="control-group">
-								  <label class="control-label">Checkboxes</label>
+								  <label class="control-label">状态</label>
 								  <div class="controls">
 									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox1" value="option1"> Option 1
+										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
 									  </label>
 									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox2" value="option2"> Option 2
-									  </label>
-									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox3" value="option3"> Option 3
+										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
 									  </label>
 								  </div>
 							  </div>
 
 							<div class="control-group">
-							  <label class="control-label" for="date01">Date input</label>
+							  <label class="control-label" for="date01">生日</label>
 							  <div class="controls">
 								<input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
 							  </div>
 							</div>
 
-
 							<div class="form-actions">
-							  <button type="button" class="btn btn-primary">Save changes</button>
-							  <button type="reset" class="btn" onclick="history.go(-1)">Cancel</button>
+							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
+							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
 							</div>
 						  </fieldset>
 						</form>   
