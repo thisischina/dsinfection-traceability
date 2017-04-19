@@ -40,16 +40,6 @@
 
 	<!-- The fav icon -->
 	<link rel="shortcut icon" href="img/companyloge.png">
-	<script>
-        function messages_view() {
-            var state=document.getElementById("viewid").style.display;
-            if(state=="inline"){
-                document.getElementById("viewid").style.display="none";
-            }else{
-                document.getElementById("viewid").style.display="inline";
-            }
-        }
-	</script>
 </head>
 
 <body>
@@ -146,7 +136,7 @@
 			<div class="row-fluid sortable">		
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
-						<h2><i class="icon-list-alt"></i> Tables</h2>
+						<h2><i class="icon-list-alt"></i> 表格信息</h2>
 						<div class="box-icon">
 							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
 						</div>
@@ -242,18 +232,70 @@
 			
 		<hr>
 
-		<div class="modal hide fade" id="myModal">
+		<div class="modal hide fade" id="myModal" style="height:auto;width: auto">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Settings</h3>
+				<h3>详情</h3>
 			</div>
-			<div class="modal-body">
-				<p>Here settings can be configured...</p>
+
+			<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-content">
+						<table class="table table-bordered table-striped table-condensed">
+							<thead>
+							<tr>
+								<th>名称</th>
+								<th>编号</th>
+								<th>身份识别卡</th>
+								<th>性别</th>
+								<th>年龄</th>
+								<th>联系电话</th>
+								<th>学历</th>
+								<th>民族</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>员工**</td>
+								<td class="center">NO0001</td>
+								<td class="center">36,215,202,175</td>
+								<td>女</td>
+								<td class="center">18</td>
+								<td class="center">12345678912</td>
+								<td class="center">本科</td>
+								<td class="center">汉</td>
+							</tr>
+							</tbody>
+
+							<thead>
+							<tr>
+								<th>所属科室</th>
+								<th>职务</th>
+								<th>出生日期</th>
+								<th>状态</th>
+								<th>备注</th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>科室一</td>
+								<td class="center">职务一</td>
+								<td class="center">05/04/1999</td>
+								<td class="center">在职</td>
+								<td>无特殊备注信息</td>
+								<td class="center"></td>
+								<td class="center"></td>
+								<td class="center"></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Close</a>
-				<a href="#" class="btn btn-primary">Save changes</a>
-			</div>
+
 		</div>
 
 		<footer>

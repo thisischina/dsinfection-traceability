@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>表单 免费高质量HTML5 Bootstrap响应式后台管理系统模板 - JS代码网</title>
+	<title>消毒追溯管理系统</title>
 	<meta name="keywords" content="HTML5模版,Bootstrap模版,Bootstrap后台模版,Bootstrap网站后台,Bootstrap3模版,Bootstrap后台管理系统模版,Bootstrap主题" />
 	<meta name="description" content="JS代码网提供HTML5模版,Bootstrap模版,Bootstrap后台模版下载">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,73 +147,100 @@
 						  <fieldset>
 							<legend>Admin,您正在添加信息...</legend>
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">名称 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+<!--大的div,里面框着2两个小的-->
+<div class="row-fluid sortable">
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">编号 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+  <div class="box span6">
+	  <div class="box-content">
+		  <div class="control-group">
+			  <label class="control-label" >名称 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">科室长 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+		  <div class="control-group">
+			  <label class="control-label" >编号 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">联系电话 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+		  <div class="control-group">
+			  <label class="control-label" >科室长 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">科地址 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+		  <div class="control-group">
+			  <label class="control-label" >联系电话 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="typeahead">人数 </label>
-								  <div class="controls">
-									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-								  </div>
-							  </div>
+		  <div class="control-group">
+			  <label class="control-label">状态</label>
+			  <div class="controls">
+				  <label class="checkbox inline">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
+				  </label>
+				  <label class="checkbox inline">
+					  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
+				  </label>
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="date01">创建时间</label>
-								  <div class="controls">
-									  <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
-								  </div>
-							  </div>
+		  <div class="control-group">
+			  <label class="control-label" for="textarea2">备注</label>
+			  <div class="controls">
+				  <textarea id="textarea2" rows="3"></textarea>
+			  </div>
+		  </div>
 
-							  <div class="control-group">
-								  <label class="control-label">状态</label>
-								  <div class="controls">
-									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
-									  </label>
-									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
-									  </label>
-								  </div>
-							  </div>
+	  </div>
+  </div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="textarea2">备注</label>
-								  <div class="controls">
-									  <textarea class="cleditor" id="textarea2" rows="3"></textarea>
-								  </div>
-							  </div>
+  <div class="box span6">
+	  <div class="box-content">
+
+		  <div class="control-group">
+			  <label class="control-label" >科地址 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
+
+		  <div class="control-group">
+			  <label class="control-label" >人数 </label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge focused">
+			  </div>
+		  </div>
+
+		  <div class="control-group">
+			  <label class="control-label" for="date01">创建时间</label>
+			  <div class="controls">
+				  <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+			  </div>
+		  </div>
+
+<!--占位用-->
+<div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div>
+
+	  </div>
+  </div>
+</div>
 
 
 							<div class="form-actions">
