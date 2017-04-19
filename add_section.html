@@ -103,7 +103,7 @@
 						<li class="nav-header hidden-tablet">Admin</li>
 						<li><a class="ajax-link" href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> 首页</span></a></li>
 						<li><a class="ajax-link" href="clean.html"><i class="icon-tint"></i><span class="hidden-tablet"> 清洗项目</span></a></li>
-						<li><a class="ajax-link" href="machine.html"><i class="icon-hdd"></i><span class="hidden-tablet"> 器件管理</span></a></li>
+						<li><a class="ajax-link" href="machine.html"><i class="icon-hdd"></i><span class="hidden-tablet"> 器械管理</span></a></li>
 						<li><a class="ajax-link" href="section.html"><i class="icon-road"></i><span class="hidden-tablet"> 科室管理</span></a></li>
 						<li><a class="ajax-link" href="user.html"><i class="icon-user"></i><span class="hidden-tablet"> 用户管理</span></a></li>
 						<li><a class="ajax-link" href="goods.html"><i class="icon-inbox"></i><span class="hidden-tablet"> 设备管理</span></a></li>
@@ -146,19 +146,20 @@
 						<form class="form-horizontal">
 						  <fieldset>
 							<legend>Admin,您正在添加信息...</legend>
-							<div class="control-group">
-							  <label class="control-label" for="typeahead">名称 </label>
-							  <div class="controls">
-								<input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
-							  </div>
-							</div>
 
-						    <div class="control-group">
-							  <label class="control-label" for="typeahead">编号 </label>
-							  <div class="controls">
-								  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">名称 </label>
+								  <div class="controls">
+									  <input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
 							  </div>
-						    </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">编号 </label>
+								  <div class="controls">
+									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
 
 							  <div class="control-group">
 								  <label class="control-label" for="typeahead">科室长 </label>
@@ -175,6 +176,27 @@
 							  </div>
 
 							  <div class="control-group">
+								  <label class="control-label" for="typeahead">科地址 </label>
+								  <div class="controls">
+									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">人数 </label>
+								  <div class="controls">
+									  <input type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="date01">创建时间</label>
+								  <div class="controls">
+									  <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+								  </div>
+							  </div>
+
+							  <div class="control-group">
 								  <label class="control-label">状态</label>
 								  <div class="controls">
 									  <label class="checkbox inline">
@@ -186,12 +208,12 @@
 								  </div>
 							  </div>
 
-							<div class="control-group">
-							  <label class="control-label" for="date01">创建时间</label>
-							  <div class="controls">
-								<input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+							  <div class="control-group">
+								  <label class="control-label" for="textarea2">备注</label>
+								  <div class="controls">
+									  <textarea class="cleditor" id="textarea2" rows="3"></textarea>
+								  </div>
 							  </div>
-							</div>
 
 
 							<div class="form-actions">

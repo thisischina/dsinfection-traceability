@@ -103,7 +103,7 @@
 						<li class="nav-header hidden-tablet">Admin</li>
 						<li><a class="ajax-link" href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> 首页</span></a></li>
 						<li><a class="ajax-link" href="clean.html"><i class="icon-tint"></i><span class="hidden-tablet"> 清洗项目</span></a></li>
-						<li><a class="ajax-link" href="machine.html"><i class="icon-hdd"></i><span class="hidden-tablet"> 器件管理</span></a></li>
+						<li><a class="ajax-link" href="machine.html"><i class="icon-hdd"></i><span class="hidden-tablet"> 器械管理</span></a></li>
 						<li><a class="ajax-link" href="section.html"><i class="icon-road"></i><span class="hidden-tablet"> 科室管理</span></a></li>
 						<li><a class="ajax-link" href="user.html"><i class="icon-user"></i><span class="hidden-tablet"> 用户管理</span></a></li>
 						<li><a class="ajax-link" href="goods.html"><i class="icon-inbox"></i><span class="hidden-tablet"> 设备管理</span></a></li>
@@ -146,6 +146,7 @@
 						<form class="form-horizontal">
 						  <fieldset>
 							<legend>Admin,您正在修改信息...</legend>
+
 							<div class="control-group">
 							  <label class="control-label" for="typeahead">名称 </label>
 							  <div class="controls">
@@ -161,12 +162,88 @@
 						    </div>
 
 							  <div class="control-group">
+								  <label class="control-label" for="typeahead">识别卡号 </label>
+								  <div class="controls">
+									  <input value="CID0000"  type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">技术支持 </label>
+								  <div class="controls">
+									  <input value="技术*"  type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">型号 </label>
+								  <div class="controls">
+									  <input value="型号*"  type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">规格 </label>
+								  <div class="controls">
+									  <input value="规格*"  type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">类型 </label>
+								  <div class="controls">
+									  <input value="类型*"  type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">厂家 </label>
+								  <div class="controls">
+									  <input value="厂家*" type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" >购买日期</label>
+								  <div class="controls">
+									  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" >入库日期</label>
+								  <div class="controls">
+									  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" >维修日期</label>
+								  <div class="controls">
+									  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">责任人 </label>
+								  <div class="controls">
+									  <input value="责任人*" type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="typeahead">联系电话 </label>
+								  <div class="controls">
+									  <input value="12345678912" type="text" class="span6 typeahead" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+								  </div>
+							  </div>
+
+							  <div class="control-group">
 								  <label class="control-label">所属科室</label>
 								  <div class="controls">
-									  <select id="selectErrorss">
+									  <select id="selectErrorss" style="width: 280px;">
 										  <option>科室一</option>
 										  <option>科室二</option>
-										  <option>科室三</option>
 									  </select>
 								  </div>
 							  </div>
@@ -175,13 +252,21 @@
 								  <label class="control-label">状态</label>
 								  <div class="controls">
 									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 可用
+										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
 									  </label>
 									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 不可用
+										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
 									  </label>
 								  </div>
 							  </div>
+
+							  <div class="control-group">
+								  <label class="control-label" for="textarea2">备注</label>
+								  <div class="controls">
+									  <textarea class="cleditor" id="textarea2" rows="3">无特殊备注信息</textarea>
+								  </div>
+							  </div>
+
 							<div class="form-actions">
 							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
 							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
