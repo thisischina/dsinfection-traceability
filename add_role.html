@@ -127,10 +127,10 @@
 			<div>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">设备</a> <span class="divider">/</span>
+						<a href="#">管理</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">编辑</a>
+						<a href="#">添加</a>
 					</li>
 				</ul>
 			</div>
@@ -138,162 +138,142 @@
 			<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
-						<h2><i class="icon-edit"></i> 编辑信息</h2>
+						<h2><i class="icon-edit"></i> 添加管理员</h2>
 						<div class="box-icon">
 							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
 						</div>
 					</div>
-
 					<div class="box-content">
 						<form class="form-horizontal">
 						  <fieldset>
-							<legend>Admin,您正在修改信息...</legend>
+							<legend>Admin,您正在添加信息...</legend>
 <!--大的div,里面框着2两个小的-->
-<div class="row-fluid sortable">
+ <div class="row-fluid sortable">
 
-		  <div class="box span6">
-			  <div class="box-content">
+	  <div class="box span6">
+		  <div class="box-content">
 
-							<div class="control-group">
-							  <label class="control-label">名称 </label>
-							  <div class="controls">
-								<input value="设备*" type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-							<div class="control-group">
-							  <label class="control-label" >编号 </label>
-							  <div class="controls">
-								  <input value="NO0001"  type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-						    <div class="control-group">
-							  <label class="control-label">识别卡号 </label>
-							  <div class="controls">
-								  <input value="CID0000"  type="text" class="input-xlarge focused">
-							  </div>
-						     </div>
-
-				  			<div class="control-group">
-							  <label class="control-label">技术支持 </label>
-							  <div class="controls">
-								  <input value="技术*"  type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-						  <div class="control-group">
-							  <label class="control-label">型号 </label>
-							  <div class="controls">
-								  <input value="型号*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">规格 </label>
-							  <div class="controls">
-								  <input value="规格*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">类型 </label>
-							  <div class="controls">
-								  <input value="类型*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">状态</label>
-							  <div class="controls">
-								  <label class="checkbox inline">
-									  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
-								  </label>
-								  <label class="checkbox inline">
-									  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
-								  </label>
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label" for="textarea2">备注</label>
-							  <div class="controls">
-								  <textarea id="textarea2" rows="3">无特殊备注信息</textarea>
-							  </div>
-						  </div>
-
+			  <div class="control-group">
+				  <label class="control-label">名称 </label>
+				  <div class="controls">
+					  <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="管理员" disabled="">
+				  </div>
 			  </div>
-		  </div>
 
-  <div class="box span6">
-	  <div class="box-content">
-
-		  <div class="control-group">
-			  <label class="control-label">厂家 </label>
-			  <div class="controls">
-				  <input value="厂家*" type="text" class="input-xlarge focused">
+			  <div class="control-group">
+				  <label class="control-label" >编号 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label" >购买日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+			  <div class="control-group">
+				  <label class="control-label" >身份识别卡 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label" >入库日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+			  <div class="control-group">
+				  <label class="control-label">性别</label>
+				  <div class="controls">
+					  <label class="checkbox inline">
+						  <input type="checkbox" value="option1"> 男
+					  </label>
+					  <label class="checkbox inline">
+						  <input type="checkbox" value="option2"> 女
+					  </label>
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label" >维修日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
+			  <div class="control-group">
+				  <label class="control-label" >年龄 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label">责任人 </label>
-			  <div class="controls">
-				  <input value="责任人*" type="text" class="input-xlarge focused">
+			  <div class="control-group">
+				  <label class="control-label" >联系电话 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label">联系电话 </label>
-			  <div class="controls">
-				  <input value="12345678912" type="text" class="input-xlarge focused">
+			  <div class="control-group">
+				  <label class="control-label" >学历 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-		  <div class="control-group">
-			  <label class="control-label">所属科室</label>
-			  <div class="controls">
-				  <select id="selectErrorss" style="width: 280px;">
-					  <option>科室一</option>
-					  <option>科室二</option>
-				  </select>
+			  <div class="control-group">
+				  <label class="control-label" >名族 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
 			  </div>
-		  </div>
 
-	  <!--占位用-->
-	  <div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
+		  </div>
 	  </div>
 
+	  <div class="box span6">
+		  <div class="box-content">
+
+			  <div class="control-group">
+				  <label class="control-label">所属科室</label>
+				  <div class="controls">
+					  <select id="selectErrorss" style="width: 280px;">
+						  <option>科室一</option>
+						  <option>科室二</option>
+					  </select>
+				  </div>
+			  </div>
+
+			  <div class="control-group">
+				  <label class="control-label" >职务 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
+			  </div>
+
+			  <div class="control-group">
+				  <label class="control-label" for="date01">出生日期</label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+				  </div>
+			  </div>
+
+			  <div class="control-group">
+				  <label class="control-label">状态</label>
+				  <div class="controls">
+					  <label class="checkbox inline">
+						  <input type="checkbox" id="inlineCheckbox1" value="option1"> 在职
+					  </label>
+					  <label class="checkbox inline">
+						  <input type="checkbox" id="inlineCheckbox2" value="option2"> 离职
+					  </label>
+				  </div>
+			  </div>
+
+			  <div class="control-group">
+				  <label class="control-label" for="textarea2">备注</label>
+				  <div class="controls">
+					  <textarea id="textarea2" rows="3"></textarea>
+				  </div>
+			  </div>
+
+<!--占位用-->
+<div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div><div class="control-group">
+</div>
+
+		  </div>
 	  </div>
   </div>
-
-</div>
 
 							<div class="form-actions">
 							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>

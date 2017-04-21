@@ -3,8 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>消毒追溯管理系统</title>
-	<meta name="keywords" content="HTML5模版,Bootstrap模版,Bootstrap后台模版,Bootstrap网站后台,Bootstrap3模版,Bootstrap后台管理系统模版,Bootstrap主题" />
-	<meta name="description" content="JS代码网提供HTML5模版,Bootstrap模版,Bootstrap后台模版下载">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- The styles -->
 	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
@@ -37,10 +35,10 @@
 	<!--[if lt IE 9]>
 	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src="js/jquery-1.7.2.min.js"></script>
 
 	<!-- The fav icon -->
 	<link rel="shortcut icon" href="img/companyloge.png">
-		
 </head>
 
 <body>
@@ -53,12 +51,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"> <img alt="Charisma Logo" src="img/companyloge.png" /> <span>医疗消毒追溯管理系统</span></a>
-
+				<a class="brand" href="clean.html"> <img alt="Charisma Logo" src="img/companyloge.png" /> <span>医疗消毒追溯管理系统</span></a>
+				
 				<!-- theme selector starts -->
 				<div class="btn-group pull-right theme-container" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-tint"></i><span class="hidden-phone"> 修改主题</span>
+						<i class="icon-tint"></i><span class="hidden-phone"> 主题</span>
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" id="themes">
@@ -74,7 +72,7 @@
 					</ul>
 				</div>
 				<!-- theme selector ends -->
-
+				
 				<!-- user dropdown starts -->
 				<div class="btn-group pull-right" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -82,13 +80,13 @@
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">个人信息</a></li>
+						<li><a href="#">Profile</a></li>
 						<li class="divider"></li>
-						<li><a href="login.html">退出</a></li>
+						<li><a href="login.html">Logout</a></li>
 					</ul>
 				</div>
 				<!-- user dropdown ends -->
-
+				
 			</div>
 		</div>
 	</div>
@@ -127,217 +125,127 @@
 			<div>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">设备</a> <span class="divider">/</span>
+						<a href="#">权限</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">编辑</a>
+						<a href="#">设置</a>
 					</li>
 				</ul>
 			</div>
-			
+
+			<a class="btn" href="add_role.html"><i class="icon-plus"></i>添加</a>
 			<div class="row-fluid sortable">
 				<div class="box span12">
-					<div class="box-header well" data-original-title>
-						<h2><i class="icon-edit"></i> 编辑信息</h2>
-						<div class="box-icon">
-							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
-						</div>
-					</div>
-
 					<div class="box-content">
-						<form class="form-horizontal">
-						  <fieldset>
-							<legend>Admin,您正在修改信息...</legend>
-<!--大的div,里面框着2两个小的-->
-<div class="row-fluid sortable">
-
-		  <div class="box span6">
-			  <div class="box-content">
-
-							<div class="control-group">
-							  <label class="control-label">名称 </label>
-							  <div class="controls">
-								<input value="设备*" type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-							<div class="control-group">
-							  <label class="control-label" >编号 </label>
-							  <div class="controls">
-								  <input value="NO0001"  type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-						    <div class="control-group">
-							  <label class="control-label">识别卡号 </label>
-							  <div class="controls">
-								  <input value="CID0000"  type="text" class="input-xlarge focused">
-							  </div>
-						     </div>
-
-				  			<div class="control-group">
-							  <label class="control-label">技术支持 </label>
-							  <div class="controls">
-								  <input value="技术*"  type="text" class="input-xlarge focused">
-							  </div>
-							</div>
-
-						  <div class="control-group">
-							  <label class="control-label">型号 </label>
-							  <div class="controls">
-								  <input value="型号*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">规格 </label>
-							  <div class="controls">
-								  <input value="规格*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">类型 </label>
-							  <div class="controls">
-								  <input value="类型*"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label">状态</label>
-							  <div class="controls">
-								  <label class="checkbox inline">
-									  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
-								  </label>
-								  <label class="checkbox inline">
-									  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
-								  </label>
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label" for="textarea2">备注</label>
-							  <div class="controls">
-								  <textarea id="textarea2" rows="3">无特殊备注信息</textarea>
-							  </div>
-						  </div>
-
-			  </div>
-		  </div>
-
-  <div class="box span6">
-	  <div class="box-content">
-
-		  <div class="control-group">
-			  <label class="control-label">厂家 </label>
-			  <div class="controls">
-				  <input value="厂家*" type="text" class="input-xlarge focused">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label" >购买日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label" >入库日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label" >维修日期</label>
-			  <div class="controls">
-				  <input type="text" class="input-xlarge datepicker" value="02/16/12">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label">责任人 </label>
-			  <div class="controls">
-				  <input value="责任人*" type="text" class="input-xlarge focused">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label">联系电话 </label>
-			  <div class="controls">
-				  <input value="12345678912" type="text" class="input-xlarge focused">
-			  </div>
-		  </div>
-
-		  <div class="control-group">
-			  <label class="control-label">所属科室</label>
-			  <div class="controls">
-				  <select id="selectErrorss" style="width: 280px;">
-					  <option>科室一</option>
-					  <option>科室二</option>
-				  </select>
-			  </div>
-		  </div>
-
-	  <!--占位用-->
-	  <div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div><div class="control-group">
-	  </div>
-
-	  </div>
-  </div>
-
-</div>
-
-							<div class="form-actions">
-							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
-							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
-							</div>
-						  </fieldset>
-						</form>   
-
+						<table class="table table-striped table-bordered bootstrap-datatable datatable">
+							<thead>
+							<tr>
+								<th>管理员名称</th>
+								<th>管理员账号</th>
+								<th>身份识别卡</th>
+								<th>创建日期</th>
+								<th>添加人</th>
+								<th>级别</th>
+								<th>角色说明</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>超级管理员</td>
+								<td class="center">NO0001</td>
+								<td class="center">36,215,202,175</td>
+								<td class="center">05/04/2015</td>
+								<td class="center">NO0001</td>
+								<td class="center">1</td>
+								<td class="center">所有权限</td>
+								<td class="center"><span class='label label-success'>启用</span></td>
+								<td class="center"></td>
+							</tr>
+							<tr>
+								<td>管理员</td>
+								<td class="center">NO0002</td>
+								<td class="center">36,215,202,175</td>
+								<td class="center">05/04/2015</td>
+								<td class="center">NO0001</td>
+								<td class="center">2</td>
+								<td class="center">二级权限</td>
+								<td class="center"><span class='label label-success'>启用</span></td>
+								<td class="center"><a class="btn" href="#">启用</a><a class="btn" href="#">停用</a><a class="btn" href="#">删除</a></td>
+							</tr>
+							<tr>
+								<td>管理员</td>
+								<td class="center">NO0003</td>
+								<td class="center">36,215,202,175</td>
+								<td class="center">05/07/2015</td>
+								<td class="center">NO0002</td>
+								<td class="center">2</td>
+								<td class="center">二级权限</td>
+								<td class="center"><span class='label label-success'>启用</span></td>
+								<td class="center"><a class="btn" href="#">启用</a><a class="btn" href="#">停用</a><a class="btn" href="#">删除</a></td>
+							</tr>
+							<tr>
+								<td>管理员</td>
+								<td class="center">NO0004</td>
+								<td class="center">36,215,202,175</td>
+								<td class="center">06/12/2015</td>
+								<td class="center">NO0001</td>
+								<td class="center">2</td>
+								<td class="center">二级权限</td>
+								<td class="center"><span class='label label-success'>启用</span></td>
+								<td class="center"><a class="btn" href="#">启用</a><a class="btn" href="#">停用</a><a class="btn" href="#">删除</a></td>
+							</tr>
+							<tr>
+								<td>管理员</td>
+								<td class="center">NO0005</td>
+								<td class="center">36,215,202,175</td>
+								<td class="center">06/15/2015</td>
+								<td class="center">NO0001</td>
+								<td class="center">2</td>
+								<td class="center">二级权限</td>
+								<td class="center"><span class='label label-success'>启用</span></td>
+								<td class="center"><a class="btn" href="#">启用</a><a class="btn" href="#">停用</a><a class="btn" href="#">删除</a></td>
+							</tr>
+							</tbody>
+						</table>
 					</div>
+
 				</div><!--/span-->
 
 			</div><!--/row-->
 
-					<!-- content ends -->
-			</div><!--/#content.span10-->
-				</div><!--/fluid-row-->
-				
+
+			</div><!--/row-->
+
+
+
+		</div><!--/row-->
+
+
+		</div><!--/row-->
+
+		<!-- content ends -->
+		</div><!--/#content.span10-->
+		</div><!--/fluid-row-->
+			
 		<hr>
 
-		<div class="modal hide fade" id="myModal">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Settings</h3>
-			</div>
-			<div class="modal-body">
-				<p>Here settings can be configured...</p>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Close</a>
-				<a href="javascript:void(0)" class="btn btn-primary">Save changes</a>
-			</div>
+
+
 		</div>
 
-			<footer>
-				<p class="pull-left"><i class="icon-time"></i>
-					<a><i id="time">
-						<script>
-                            document.getElementById('time').innerHTML=new Date().toLocaleString();
-                            setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString();",1000);
-						</script>
-					</i></a>
-				</p>
-				<p class="pull-right">Powered by: <a>九易信息科技</a></p>
-			</footer>
+		<footer>
+			<p class="pull-left"><i class="icon-time"></i>
+				<a><i id="time">
+					<script>
+                        document.getElementById('time').innerHTML=new Date().toLocaleString();
+                        setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString();",1000);
+					</script>
+				</i></a>
+			</p>
+			<p class="pull-right">Powered by: <a>九易信息科技</a></p>
+		</footer>
 		
 	</div><!--/.fluid-container-->
 
