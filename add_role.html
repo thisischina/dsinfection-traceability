@@ -150,7 +150,7 @@
 <!--大的div,里面框着2两个小的-->
  <div class="row-fluid sortable">
 
-	  <div class="box span6">
+	  <div class="span6">
 		  <div class="box-content">
 
 			  <div class="control-group">
@@ -200,30 +200,16 @@
 				  </div>
 			  </div>
 
-			  <div class="control-group">
-				  <label class="control-label" >学历 </label>
-				  <div class="controls">
-					  <input type="text" class="input-xlarge focused">
-				  </div>
-			  </div>
-
-			  <div class="control-group">
-				  <label class="control-label" >名族 </label>
-				  <div class="controls">
-					  <input type="text" class="input-xlarge focused">
-				  </div>
-			  </div>
-
 		  </div>
 	  </div>
 
-	  <div class="box span6">
+	  <div class="span6" style="margin-left: -70px">
 		  <div class="box-content">
 
 			  <div class="control-group">
 				  <label class="control-label">所属科室</label>
 				  <div class="controls">
-					  <select id="selectErrorss" style="width: 280px;">
+					  <select id="selectErrorss" style="width: 280px">
 						  <option>科室一</option>
 						  <option>科室二</option>
 					  </select>
@@ -257,28 +243,45 @@
 			  </div>
 
 			  <div class="control-group">
-				  <label class="control-label" for="textarea2">备注</label>
+				  <label class="control-label" >学历 </label>
 				  <div class="controls">
-					  <textarea id="textarea2" rows="3"></textarea>
+					  <input type="text" class="input-xlarge focused">
 				  </div>
 			  </div>
 
-<!--占位用-->
-<div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div>
+			  <div class="control-group">
+				  <label class="control-label" >名族 </label>
+				  <div class="controls">
+					  <input type="text" class="input-xlarge focused">
+				  </div>
+			  </div>
 
 		  </div>
 	  </div>
   </div>
 
-							<div class="form-actions">
-							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
-							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
-							</div>
+
+  <!--大的div,里面框着2两个小的-->
+  <div class="row-fluid sortable">
+
+	  <div class="span6">
+		  <div class="box-content">
+			  <div class="control-group">
+				  <div class="control-group">
+					  <label class="control-label">备注</label>
+					  <div class="controls">
+						  <textarea class="cleditor"></textarea>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+
+							  <div class="controls">
+								  <button type="button" class="btn btn-primary" onclick="history.go(-1)" style="margin-left: 10px">保存</button>
+								  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
+							  </div>
 						  </fieldset>
 						</form>   
 

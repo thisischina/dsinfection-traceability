@@ -147,37 +147,31 @@
 						<form class="form-horizontal">
 						  <fieldset>
 							<legend>Admin,您正在添加信息...</legend>
+
 <!--大的div,里面框着2两个小的,用于左右两块-->
 <div class="row-fluid sortable">
 
-  <div class="box span6">
+  <div class="span6">
 	<div class="box-content">
 
-		<div class="control-group">
+		<div class="control-group" >
 			<label class="control-label">名称 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">编号 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">识别卡号 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
-			</div>
-		</div>
-
-		<div class="control-group">
-			<label class="control-label">技术支持 </label>
-			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 			</div>
 		</div>
 
@@ -203,42 +197,24 @@
 		</div>
 
 		<div class="control-group">
-			<label class="control-label">状态</label>
+			<label class="control-label">技术支持 </label>
 			<div class="controls">
-				<label class="checkbox inline">
-					<input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
-				</label>
-				<label class="checkbox inline">
-					<input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
-				</label>
+				<input type="text" class="input-xlarge focused" style="width: 720px">
 			</div>
 		</div>
-
-		<div class="control-group">
-			<label class="control-label" for="textarea2">备注</label>
-			<div class="controls">
-				<textarea id="textarea2" rows="3"></textarea>
-			</div>
-		</div>
-	</div>
-  </div>
-
-  <div class="box span6">
-	<div class="box-content">
 
 		<div class="control-group">
 			<label class="control-label">厂家 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused" style="width: 720px">
 			</div>
 		</div>
 
-		<div class="control-group">
-			<label class="control-label" >购买日期</label>
-			<div class="controls">
-				<input type="text" class="input-xlarge datepicker" value="02/16/12">
-			</div>
-		</div>
+	</div>
+  </div>
+
+  <div class="span6"  style="margin-left: -70px">
+	<div class="box-content">
 
 		<div class="control-group">
 			<label class="control-label" >入库日期</label>
@@ -257,14 +233,14 @@
 		<div class="control-group">
 			<label class="control-label">责任人 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">联系电话 </label>
 			<div class="controls">
-				<input type="text" class="input-xlarge focused">
+				<input type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 			</div>
 		</div>
 
@@ -278,14 +254,11 @@
 			</div>
 		</div>
 
-		<!--占位用-->
 		<div class="control-group">
-		</div><div class="control-group">
-		</div><div class="control-group">
-		</div><div class="control-group">
-		</div><div class="control-group">
-		</div><div class="control-group">
-		</div><div class="control-group">
+			<label class="control-label" >购买日期</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge datepicker" value="02/16/12">
+			</div>
 		</div>
 
 	</div>
@@ -293,10 +266,43 @@
 
 </div>
 
-							<div class="form-actions">
-							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
-							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
-							</div>
+<!--大的div,里面框着2两个小的,用于左右两块-->
+<div class="row-fluid sortable">
+
+  <div class="span6">
+	  <div class="box-content">
+
+		  <div class="control-group">
+			  <label class="control-label">状态</label>
+			  <div class="controls">
+				  <label class="checkbox inline">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"> 启用
+				  </label>
+				  <label class="checkbox inline">
+					  <input type="checkbox" id="inlineCheckbox2" value="option2"> 停用
+				  </label>
+			  </div>
+		  </div>
+
+		  <div class="control-group">
+			  <label class="control-label">备注</label>
+			  <div class="controls">
+				  <textarea class="cleditor"></textarea>
+			  </div>
+		  </div>
+
+
+	  </div>
+  </div>
+</div>
+
+						  <div class="control-group">
+							  <div class="controls">
+								  <button type="button" class="btn btn-primary" onclick="history.go(-1)" style="margin-left: 10px">保存</button>
+								  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
+							  </div>
+						  </div>
+
 						  </fieldset>
 						</form>   
 

@@ -150,27 +150,41 @@
 <!--大的div,里面框着2两个小的-->
 <div class="row-fluid sortable">
 
-  <div class="box span6">
+  <div class="span6">
 	  <div class="box-content">
 
 							<div class="control-group">
 							  <label class="control-label">名称 </label>
 							  <div class="controls">
-								<input value="员工1" type="text" class="input-xlarge focused">
+								<input value="员工1" type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 							  </div>
 							</div>
 
 						    <div class="control-group">
 							  <label class="control-label" >编号 </label>
 							  <div class="controls">
-								  <input value="NO0001"  type="text" class="input-xlarge focused">
+								  <input value="NO0001"  type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
 							  </div>
 						  </div>
 
 						  <div class="control-group">
 							  <label class="control-label" >身份识别卡 </label>
 							  <div class="controls">
-								  <input value="36,215,202,175"  type="text" class="input-xlarge focused">
+								  <input value="36,215,202,175"  type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
+							  </div>
+						  </div>
+
+						  <div class="control-group">
+							  <label class="control-label" >年龄 </label>
+							  <div class="controls">
+								  <input value="18"  type="text" class="input-xlarge focused">
+							  </div>
+						  </div>
+
+						  <div class="control-group">
+							  <label class="control-label" >名族 </label>
+							  <div class="controls">
+								  <input value="汉" type="text" class="input-xlarge focused">
 							  </div>
 						  </div>
 
@@ -186,38 +200,10 @@
 							  </div>
 						  </div>
 
-						  <div class="control-group">
-							  <label class="control-label" >年龄 </label>
-							  <div class="controls">
-								  <input value="18"  type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label" >联系电话 </label>
-							  <div class="controls">
-								  <input value="12345678912" type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label" >学历 </label>
-							  <div class="controls">
-								  <input value="本科" type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
-						  <div class="control-group">
-							  <label class="control-label" >名族 </label>
-							  <div class="controls">
-								  <input value="汉" type="text" class="input-xlarge focused">
-							  </div>
-						  </div>
-
 	  </div>
 	</div>
 
-	<div class="box span6">
+	<div class="span6"  style="margin-left: -70px">
 		<div class="box-content">
 
 						  <div class="control-group">
@@ -244,40 +230,59 @@
 								  </div>
 							  </div>
 
-							  <div class="control-group">
-								  <label class="control-label">状态</label>
-								  <div class="controls">
-									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 在职
-									  </label>
-									  <label class="checkbox inline">
-										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 离职
-									  </label>
-								  </div>
-							  </div>
+							<div class="control-group">
+								<label class="control-label" >学历 </label>
+								<div class="controls">
+									<input value="本科" type="text" class="input-xlarge focused">
+								</div>
+							</div>
 
-							  <div class="control-group">
-								  <label class="control-label" for="textarea2">备注</label>
-								  <div class="controls">
-									  <textarea id="textarea2" rows="3">无特殊备注信息</textarea>
-								  </div>
-							  </div>
-<!--占位用-->
-<div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div><div class="control-group">
-</div>
+							<div class="control-group">
+								<label class="control-label" >联系电话 </label>
+								<div class="controls">
+									<input value="12345678912" type="text" class="input-xlarge focused">&nbsp;<b style="color: red">*</b>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">状态</label>
+								<div class="controls">
+									<label class="checkbox inline">
+										<input type="checkbox" id="inlineCheckbox1" value="option1"> 在职
+									</label>
+									<label class="checkbox inline">
+										<input type="checkbox" id="inlineCheckbox2" value="option2"> 离职
+									</label>
+								</div>
+							</div>
 
 		</div>
 	</div>
 </div>
 
-							<div class="form-actions">
-							  <button type="button" class="btn btn-primary" onclick="history.go(-1)">保存</button>
+  <!--大的div,里面框着2两个小的-->
+  <div class="row-fluid sortable">
+
+	  <div class="span6">
+		  <div class="box-content">
+			  <div class="control-group">
+
+				  <div class="control-group">
+					  <label class="control-label">备注</label>
+					  <div class="controls">
+						  <textarea class="cleditor">无特殊备注信息</textarea>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+
+						  <div class="controls">
+							  <button type="button" class="btn btn-primary" onclick="history.go(-1)" style="margin-left: 10px">保存</button>
 							  <button type="reset" class="btn" onclick="history.go(-1)">取消</button>
-							</div>
+						  </div>
+
 						  </fieldset>
 						</form>   
 
